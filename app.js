@@ -1,17 +1,9 @@
 const express = require('express')
 const app = express()
 const fs = require('fs')
-const mysql = require('mysql')
-const multer = require('multer');
-
 //Express Setting
 app.use(express.static('public'))
 app.use('/views', express.static('views'))
-
-//body Parser
-const bodyParser = require('body-parser')
-app.use(bodyParser.json())
-app.use(express.urlencoded({ extended: false }))
 
 
 //Function
